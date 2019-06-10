@@ -1,0 +1,31 @@
+
+body {
+    background-color: #c3dbe5;
+}
+
+
+
+
+#content{
+    border: 2px solid purple;
+    margin: 10px;
+}
+/* ids must be unique 2 things cannot have the same id */
+
+
+.footer-thing > a{
+    color: rgb(242, 244, 90);
+}
+/* this mean find me the thing with the footer-thing class and grab all the a tags inside */
+
+
+a {
+    color: white;
+}
+
+.love{
+    background-color: rgba(65, 112, 60, 0.75);
+}
+/* rgba lets you make things that are semi transparent the fourt parameter is the opacity */
+
+
