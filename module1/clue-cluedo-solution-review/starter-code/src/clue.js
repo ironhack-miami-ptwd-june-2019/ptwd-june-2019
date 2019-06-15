@@ -68,23 +68,22 @@ var roomsArray = [
 ]
 
 
-function randomSelector(arrayToPickFrom){
-    let rando = Math.floor(Math.random()* arrayToPickFrom.length);
-    return arrayToPickFrom[rando];
-  }
+// function randomSelector(arrayToPickFrom){
+//     let rando = Math.floor(Math.random()* arrayToPickFrom.length);
+//     return arrayToPickFrom[rando];
+//   }
 
-  function pickMistery(){
-      let mysteryEnvelope = [];
-      mysteryEnvelope.push(randomSelector(charactersArray));
-      mysteryEnvelope.push(randomSelector(weaponsArray));
-      mysteryEnvelope.push(randomSelector(roomsArray));
-      return mysteryEnvelope;
-  }
+//   function pickMistery(){
+//       let mysteryEnvelope = [];
+//       mysteryEnvelope.push(randomSelector(charactersArray));
+//       mysteryEnvelope.push(randomSelector(weaponsArray));
+//       mysteryEnvelope.push(randomSelector(roomsArray));
+//       return mysteryEnvelope;
+//   }
 
-  function revealMistery(envelope){
-
-    return `${envelope[0].first_name} ${envelope[0].last_name} killed Mr.Boddy using the ${envelope[1].name} in the ${envelope[2].name}!!!!`
-  } 
+//   function revealMistery(envelope){
+//     return `${envelope[0].first_name} ${envelope[0].last_name} killed Mr.Boddy using the ${envelope[1].name} in the ${envelope[2].name}!!!!`
+//   } 
 
 
 
