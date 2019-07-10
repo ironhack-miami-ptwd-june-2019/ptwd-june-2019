@@ -60,11 +60,15 @@ $ git remote -v
 ```bash
 $ git add .
 $ git commit -m"some meaningful message in present tense"
-$ git push origin master
+$ git push 
+# you don't have to add "origin master" because you did "-u" the first time,
+# which means we set that we will be pushing upstream to the master
+# so it assumes every time we push, we do it to master
+# if you type full command "git push origin master" it will work perfectly as well
 ```
 
 **Not hard at all, right?** 
-Use this cheatsheet for the first a couple of times until you find it unuseful since you know it by heart, not even thinking about it. :wink:
+Use this cheat sheet for the first a couple of times until you find it unuseful since you know it by heart, not even thinking about it. :wink:
 
 
 **Happy coding :heart:**
