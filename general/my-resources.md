@@ -31,6 +31,7 @@
 
 ## PassportJS
 - [PassportJS — The Confusing Parts Explained](https://hackernoon.com/passportjs-the-confusing-parts-explained-edca874ebead)
+- [Learn how to handle authentication with Node using Passport.js](https://medium.com/signature-networks/learn-how-to-handle-authentication-with-node-using-passport-js-4a56ed18e81e)
 
 ## React cheat sheet
 - [The most common beginner problems when starting with React](http://www.js-craft.io/blog/14-The-7-Most-Common-Mistakes-that-React-Developers-Make/)
