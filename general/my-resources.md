@@ -58,6 +58,7 @@
 - [**JavaScript style guide** aka **The Clean Code**](https://google.github.io/styleguide/jsguide.html)
 - [Google's style guide for writing a clean code](https://google.github.io/styleguide/htmlCSSguide.html/)
 - [JavaScript linter](https://eslint.org/docs/user-guide/getting-started)
+- [Keep Code Consistent With Prettier & ESLint](https://itnext.io/keep-code-consistent-across-developers-the-easy-way-with-prettier-eslint-60bb7e91b76c)
 
 ## Styling
 
