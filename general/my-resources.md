@@ -1,5 +1,6 @@
 ## JS/ES6
 - [All you have to know about ES6](http://exploringjs.com/es6/) 
+- [JavaScript ES6 — write less, do more](https://medium.com/free-code-camp/write-less-do-more-with-javascript-es6-5fd4a8e50ee2)
 - [How three dots changed JavaScript](https://dmitripavlutin.com/how-three-dots-changed-javascript/)
 - [JavaScript functions](https://developer.mozilla.org/en-US/docs/Glossary/Function)
 - [JavaScript function arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
