@@ -27,6 +27,7 @@
 - [.slice() vs .splice 2](http://www.tothenew.com/blog/javascript-splice-vs-slice/)
 
 ## OOP
+- [An introduction to Object-Oriented Programming in JavaScript](https://medium.com/free-code-camp/an-introduction-to-object-oriented-programming-in-javascript-8900124e316a)
 - [OOP In JavaScript: What You NEED to Know](https://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
 - [JS Classes - under the hood](https://medium.com/tech-tajawal/javascript-classes-under-the-hood-6b26d2667677)
 - [“Super” and “Extends” In JavaScript ES6 - Understanding The Tough Parts](https://medium.com/beginners-guide-to-mobile-web-development/super-and-extends-in-javascript-es6-understanding-the-tough-parts-6120372d3420)
