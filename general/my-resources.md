@@ -109,6 +109,7 @@
 - [rem vs em](https://j.eremy.net/confused-about-rem-and-em/)
 - [Using SVG image format](https://css-tricks.com/using-svg/)
 - [Learn MongoDB on Mongo University](https://university.mongodb.com/)
+- [How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
 
 
 ### Tools
