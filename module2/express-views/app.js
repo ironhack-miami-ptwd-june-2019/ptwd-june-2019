@@ -19,6 +19,8 @@ app.set("view engine", "hbs");
 // ROUTES
 // *******************
 
+app.get("/", (req, res, next) => res.render("index.hbs"));
+
                                 // it's already pre-fixed with "/views/" that's why
 // localhost:3000/cool          // we don't have to put the full path here
 app.get("/cool", (req, res, next) => res.render("cool-page.hbs"));
