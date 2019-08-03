@@ -1,0 +1,27 @@
+{{!-- this is example of an array of objects --}}
+
+{{!-- <ul>
+{{#each allStudents}}
+   <li> {{ this.name }} - {{ this.course }} </li>
+{{/each}}
+</ul> --}}
+
+
+{{!-- this is example of array of strings only --}}
+<ul>
+    {{#each allStudentsNames }}
+        {{ this }}
+    {{/each}}
+</ul>
+
+
+{{!-- render the name of the first student --}}
+
+{{!-- to display 1st string from array use array.[0] --}}
+<h2> The first student is: {{ allStudentsNames.[0] }} </h2>
+
+
+{{!-- to display the first object's property from the array of objects
+use array.0.propertyname --}}
+
+{{!-- <h2> The first student is: {{ theData.0 }} </h2> --}}
