@@ -60,4 +60,51 @@ function printString(str){
   
   // Instead of printing the string each time, let’s make a function that will concatenate the string and pass it on.
   
+  function addString(str1, str2, callback){
+    setTimeout(() => {
+        callback(`${str1} ${str2}`);
+      }, Math.floor(Math.random() * 100) + 1
+    )
+  }
   
+  
+  function addAll(){
+    // result is callback
+    addString('', 'A', result => {
+      addString(result, 'B', result => {
+        addString(result, 'C', result => {
+         console.log(result) // Prints out " A B C"
+        })
+      })
+    })
+  }
+  // addAll()
+  
+  function addStringWithPromises(str1, str2){
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+          resolve(`${str1} ${str2}`)
+        }, 
+        Math.floor(Math.random() * 100) + 1
+      )
+    })
+  }
+  
+  function addAllWithPromise(){  
+    addStringWithPromises('', 'A')
+    .then(result => addStringWithPromises(result, 'B'))
+    .then(result => addStringWithPromises(result, 'C'))
+    .then(result => console.log(result))
+      // Prints out " A B C" 
+  }
+  // addAllWithPromise()
+  
+  
+  async function addAllWithPromise(){
+    let toPrint = ''
+    toPrint = await addStringWithPromises(toPrint, 'A')
+    toPrint = await addStringWithPromises(toPrint, 'B')
+    toPrint = await addStringWithPromises(toPrint, 'C')
+    console.log(toPrint) // Prints out " A B C"
+  }
+  addAllWithPromise()
