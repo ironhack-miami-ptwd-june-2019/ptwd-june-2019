@@ -45,11 +45,11 @@ app.get('/student', (req, res, next) => {
         oneRandomStudent : theData[randomIndex]
     };
 
-    // you don't have to say views/student-views because views is default folder
-    //                                   data is the name of the 
-    //                                  object we created above
-    //                                               ^
-    //                                               |
+    // you don't have to say views/students because views is default folder
+    //           data is the name of the 
+    //           object we created above
+    //              ^
+    //              |
     res.render('students/random-student.hbs', data);
 });
 
