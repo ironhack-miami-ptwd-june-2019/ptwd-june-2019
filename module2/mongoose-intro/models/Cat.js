@@ -37,7 +37,7 @@ const catSchema = new Schema({
 // Cat is our mongoose model class
 // all cats in cats collection will share these properties
 // Mongoose turns models name to a collection name (Cat --> cats)
-const Cat = mongoose.module("Cat", catSchema);
+const Cat = mongoose.model("Cat", catSchema);
 module.exports = Cat;
 // the same as above just in one line
 // module.exports = mongoose.module("Cat", catSchema);
