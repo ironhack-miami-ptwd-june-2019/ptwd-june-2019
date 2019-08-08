@@ -1,0 +1,11 @@
+{{!--  .then(cat => res.render("cats-views/cat-details", cat)) --}}
+{{!-- because we passed "cat"  variable to this view without {} we can access to its properties directly--}}
+{{!-- if we passed {cat} like this, we would have to say {{cat.name}}, {{cat.age}} etc. --}}
+<h1>This is the details page of {{name}}</h1>
+<p>This cat is old {{age}} years.</p>
+<img src="{{photoUrl}}" alt="cool-cat-image">
+
+
+<br>
+
+<a href="/cats"> Go back to cats list page</a>

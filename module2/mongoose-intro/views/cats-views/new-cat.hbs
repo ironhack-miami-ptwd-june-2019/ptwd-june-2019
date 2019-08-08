@@ -1,0 +1,14 @@
+{{!-- action is the ROUTE where this form is going to be submitted --}}
+
+{{!-- method="post" means that we will have app.post() and action is telling us what is the route app.post("/cats/create") --}}
+<form action="/cats/create" method="post">
+
+    <label for="cat-name"> Name: </label>
+    {{!-- for from label needs to match id from input --}}
+    <input type="text" name="theName" id="cat-name">
+
+    <label for="cat-age"> Age: </label>
+    <input type="number" name="theAge" id="cat-age">
+
+    <button type="submit">Save the cat </button>
+</form>

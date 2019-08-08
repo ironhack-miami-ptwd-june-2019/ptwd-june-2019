@@ -1,0 +1,24 @@
+<form action="/search" method="get">
+    <input type="text" placeholder="Input cat's name" name="catName">
+</form>
+
+{{#if cats.length}}
+    <ul>
+        {{#each cats}}
+            <li>{{ this.name }} -> {{ this.age }}</li>
+        {{/each}}
+    </ul>
+    <a href="/cats"> Go to cats list </a> 
+{{/if}}
+
+
+{{#unless cats}}
+<h1>The list of cats: </h1>
+
+<div>
+    {{#each allCats}}
+        <li> <a href="/cats/{{this._id}}"> {{ this.name }} </a></li>
+    {{/each}}
+</div>
+
+{{/unless}}
