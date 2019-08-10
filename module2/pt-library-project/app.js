@@ -61,5 +61,6 @@ app.use('/', index);
 // app.use("/", authorRoutes);
 app.use("/", require("./routes/author-routes"));
 
+app.use("/", require("./routes/book-routes"));
 
 module.exports = app;

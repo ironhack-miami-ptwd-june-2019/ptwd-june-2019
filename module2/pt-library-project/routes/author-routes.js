@@ -17,7 +17,7 @@ router.post("/authors/create", (req, res, next) => {
   // console.log("THE FORM: ", req.body);
   Author
     .create(req.body)
-    .then( newAuthor => console.log("NEW AUTHOR: ", newAuthor) )
+    .then( newAuthor => res.redirect("/authors") )
     .catch(err => console.log("Error while creating a new author: ", err));
 });
 
