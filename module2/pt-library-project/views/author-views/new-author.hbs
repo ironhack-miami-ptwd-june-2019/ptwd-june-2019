@@ -1,0 +1,25 @@
+
+{{!-- use METHOD POST when creating new instances in the DB through the form --}}
+
+{{!--          |-------------------------------------|   --}}
+{{!-- router.post('/authors/create')                 |   --}}            
+{{!--                   |                            |
+                        |               |----------- |    --}}
+<form action="/authors/create" method="post">
+  <label for="first_name"> First Name </label>
+  <input type="text" name="firstName" id="first_name">
+
+  <label for="last_name"> Last Name </label>
+  <input type="text" name="lastName" id="last_name">
+
+  <label for="nation"> Nationality </label>
+  <input type="text" name="nationality" id="nation">
+
+  <label for="bday"> Birthday </label>
+  <input type="date" name="birthday" id="bday">
+
+  <label for="img"> Image URL </label>
+  <input type="text" name="imageUrl" id="img">
+
+  <button> Add New Author </>
+</form>
