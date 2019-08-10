@@ -19,9 +19,15 @@ router.post("/authors/create", (req, res, next) => {
     .create(req.body)
     .then( newAuthor => console.log("NEW AUTHOR: ", newAuthor) )
     .catch(err => console.log("Error while creating a new author: ", err));
-
-
 });
+
+router.get("/authors", (req, res, next) => {
+  Author
+    .find()
+    .then(authorsFromDB => res.render("author-views/allAuthors", { authors: authorsFromDB }))
+    .catch(err => console.log("Error while getting the authors from the DB: ", err));
+});
+
 
 
 
