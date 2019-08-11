@@ -1,9 +1,6 @@
 const express = require('express');
 const hbs = require('hbs');
 
-// we really don't need mongoose in this project
-// const mongoose = require('mongoose');
-
 const app =express();
 
 // require spotify-web-api-node npm package since it will give you access to 
@@ -90,7 +87,5 @@ spotifyApi.getAlbumTracks(req.params.albumId)
 })
 .catch(err => console.log("Error while getting the tracks: ", err));
 })
-
-
 
 app.listen(3000);
