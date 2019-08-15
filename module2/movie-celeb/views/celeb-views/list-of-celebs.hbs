@@ -1,0 +1,33 @@
+<h2>Celebrities Index Page</h2>
+
+<a href="/secret">Secret Page</a>
+
+{{#if user}}
+
+<h3>Hello, {{user.username}}</h3>
+
+<form action="/logout" method="POST">
+    <button>Logout</button>
+</form>
+
+{{/if}}
+
+<div>
+
+{{#each listOfCelebs}}
+
+<a href="/celebrities/details/{{this._id}}">
+<h3>
+{{this.name}}
+</h3>
+</a>
+<a href="/celebrities/edit/{{this._id}}">Edit This Celebrity</a>
+<form action="/celebrities/{{this._id}}/destroy" method="POST">
+    <button>Delete Celeb</button>
+</form>
+
+
+{{/each}}
+
+
+</div>
