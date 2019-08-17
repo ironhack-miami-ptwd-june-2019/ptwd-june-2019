@@ -10,7 +10,7 @@ const movieSchema = new Schema({
 
 
 
-const movieModel = m.model('Movie', movieSchema)
+const movieModel = mongoose.model('Movie', movieSchema)
 
 
 
