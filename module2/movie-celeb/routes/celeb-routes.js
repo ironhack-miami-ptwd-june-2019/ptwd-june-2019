@@ -6,12 +6,26 @@ const Celebrity = require('../models/Celebrity');
 /* GET home page */
 router.get('/', (req, res, next) => {
   console.log('------------------------')
-  console.log(req.session)
+  console.log(req.user)
+
+  
   Celebrity.find()
   .then((result)=>{
     // console.log(result)
 
-    res.render('celeb-views/list-of-celebs', {listOfCelebs: result, user: req.session.currentlyLoggedIn});
+    let newList = result.map((eachCeleb)=>{
+      if(eachCeleb.creator.equals(req.user._id)){
+        eachCeleb.owned = true;
+        return eachCeleb
+      } else{
+        return eachCeleb;
+      }
+
+    })
+
+
+
+    res.render('celeb-views/list-of-celebs', {listOfCelebs: newList});
   })
   .catch((err)=>{
     next(err);
@@ -47,9 +61,12 @@ router.post('/creation', (req, res, next)=>{
     Celebrity.create({
       name: newName,
       occupation: newJob,
-      catchphrase: newPhrase
+      catchphrase: newPhrase,
+      creator: req.user._id
     })
     .then((result)=>{
+
+      req.flash('success','New Celebrity successfully addded to Database')
 
       res.redirect('/celebrities')
       //res redirect take a url as the argument
@@ -75,9 +92,17 @@ router.post('/:id/destroy', (req, res, next)=>{
 
 
 router.get('/edit/:id', (req, res, next)=>{
+  
+  
   Celebrity.findById(req.params.id)
   .then((result)=>{
-    res.render('celeb-views/edit', {theCelebrity: result})
+    if(req.user._id.equals(result.creator)){
+      res.render('celeb-views/edit', {theCelebrity: result})
+    } else{
+      req.flash('error', 'sorry you can only edit your own celebrities');
+      res.redirect('/celebrities');
+    }
+
   })
   .catch((err)=>{
     next(err)

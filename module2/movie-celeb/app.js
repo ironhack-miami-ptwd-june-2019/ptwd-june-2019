@@ -10,7 +10,13 @@ const logger       = require('morgan');
 const path         = require('path');
 
 const session      = require("express-session");
-const MongoStore   = require("connect-mongo")(session);
+const MongoStore= require("connect-mongo")(session);
+const passport     = require("passport");
+const LocalStrategy= require("passport-local").Strategy;
+
+const User         = require('./models/User');
+const bcrypt       = require('bcryptjs');
+const flash        = require("connect-flash");
 
 
 
@@ -51,22 +57,80 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Blah!';
 
+
+
+// version without passport
+// app.use(session({
+//   secret: "shhhhhsupersecret",
+//   cookie: { maxAge: 60000 },
+//   store: new MongoStore({
+//     mongooseConnection: mongoose.connection,
+//     ttl: 24 * 60 * 60 // 1 day
+//   })
+// }));
+
+
+// verison with passport 
 app.use(session({
-  secret: "shhhhhsupersecret",
-  cookie: { maxAge: 60000 },
-  store: new MongoStore({
-    mongooseConnection: mongoose.connection,
-    ttl: 24 * 60 * 60 // 1 day
-  })
+  secret: "randomsecretword",
+  resave: true,
+  saveUninitialized: true
+}));
+
+
+passport.serializeUser((user, cb) => {
+  cb(null, user._id);
+});
+
+passport.deserializeUser((id, cb) => {
+  User.findById(id, (err, user) => {
+    if (err) { return cb(err); }
+    cb(null, user);
+  });
+});
+
+
+app.use(flash());
+
+passport.use(new LocalStrategy((username, password, next) => {
+  User.findOne({ username }, (err, user) => {
+    if (err) {
+      return next(err);
+    }
+    if (!user) {
+      return next(null, false, { message: "Incorrect username" });
+    }
+    if (!bcrypt.compareSync(password, user.password)) {
+      return next(null, false, { message: "Incorrect password" });
+    }
+
+    return next(null, user);
+  });
 }));
 
 
 
 
+
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+
+
+app.use((req, res, next) => {
+  res.locals.currentUser = req.user;
+  res.locals.errorMessage = req.flash('error');
+  res.locals.successMessage=req.flash('success');
+  next();
+});
+
+
+
 const celebRoutes = require('./routes/celeb-routes');
-app.use('/celebrities', celebRoutes);
+app.use('/celebrities',celebRoutes);
 
 
 const userRoutes = require('./routes/user-routes');

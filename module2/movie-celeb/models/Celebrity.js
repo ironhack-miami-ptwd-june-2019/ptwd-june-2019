@@ -5,7 +5,8 @@ const Schema = m.Schema;
 const celebSchema = new Schema({
     name: String,
     occupation: String,
-    catchphrase: String
+    catchphrase: String,
+    creator: {type: Schema.Types.ObjectId, ref: 'User'}
 })
 
 

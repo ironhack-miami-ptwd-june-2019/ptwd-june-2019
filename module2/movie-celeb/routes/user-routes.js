@@ -4,6 +4,8 @@ const User    = require('../models/User');
 
 const bcrypt = require('bcryptjs');
 
+const passport = require("passport");
+
 
 
 router.get('/signup', (req, res, next)=>{
@@ -18,11 +20,19 @@ router.post('/signup', (req, res, next)=>{
     let username = req.body.theUsername;
     let pword = req.body.thePassword;
 
-    let salt = bcrypt.genSaltSync(10);
+  if(!username || !pword){
+    req.flash('error', 'please provide both username and password it seems you have forgotton one or both')
+    res.redirect('/signup')
+  }
+
+
+
+    const salt = bcrypt.genSaltSync(10);
     const hashedPassword = bcrypt.hashSync(pword, salt);
 
     User.create({username: username, password: hashedPassword})
     .then(()=>{
+      req.flash('success', 'account successfully created')
         res.redirect('/celebrities')
     })
     .catch((err)=>{
@@ -36,49 +46,59 @@ router.get('/login', (req, res, next)=>{
     res.render('user-views/login')
 })
 
-router.post('/login', (req, res, next)=>{
-    const uName = req.body.theUsername;
-    const pword = req.body.thePassword;
+router.post('/login', passport.authenticate("local", {
+  successRedirect: "/celebrities",
+  failureRedirect: "/login",
+  failureFlash: true,
+  passReqToCallback: true
+}));
 
 
-  User.findOne({ "username": uName })
-  .then(user => {
-      if (!user) {
-        res.redirect('/')
-      }
-      if (bcrypt.compareSync(pword, user.password)) {
-        // Save the login in the session!
-        req.session.currentlyLoggedIn = user;
-        res.redirect("/celebrities");
-      } else {
-        res.render("auth/login", {
-          errorMessage: "Incorrect password"
-        });
-      }
-  })
-  .catch(error => {
-    next(error);
-  })
+  // old version without passport
+  //   const uName = req.body.theUsername;
+  //   const pword = req.body.thePassword;
 
 
-  router.post('/logout', (req, res, next)=>{
-      req.session.destroy()
-      res.redirect('/celebrities')
-  })
+  // User.findOne({ "username": uName })
+  // .then(user => {
+  //     if (!user) {
+  //       res.redirect('/')
+  //     }
+  //     if (bcrypt.compareSync(pword, user.password)) {
+  //       // Save the login in the session!
+  //       req.session.currentlyLoggedIn = user;
+  //       res.redirect("/celebrities");
+  //     } else {
+  //       res.render("auth/login", {
+  //         errorMessage: "Incorrect password"
+  //       });
+  //     }
+  // })
+  // .catch(error => {
+  //   next(error);
+  // })
+  // begin new verison with passport
 
 
 
+// })
 
+
+
+router.post('/logout', (req, res, next)=>{
+  req.session.destroy()
+  res.redirect('/celebrities')
 })
 
 
-router.get('/secret', (req, res, next)=>{
+router.get('/secret' ,(req, res, next)=>{
+  if(!req.user){
+    res.redirect('/login')
+  }
 
-    if(req.session.currentlyLoggedIn){
+ 
         res.render('secret')
-    } else{
-        res.redirect('/celebrities')
-    }
+ 
 
 
 })

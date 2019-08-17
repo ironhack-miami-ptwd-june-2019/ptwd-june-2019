@@ -6,6 +6,46 @@
   </head>
   <body>
 
+
+    {{#if errorMessage}}
+    <div style="border: 1px solid red">
+        {{errorMessage}}
+    </div>
+    {{/if}}
+    {{#if successMessage}}
+      <div style="border: 1px solid green">
+      {{successMessage}}
+      </div>
+    {{/if}}
+
+   <nav>
+   {{#if currentUser}}
+
+
+    <h3>Hello, {{currentUser.username}}</h3>
+
+    <form action="/logout" method="POST">
+        <button>Logout</button>
+    </form>
+
+      <a href="/secret">Secret Page</a>
+      <a href="/celebrities">See Celebrities</a>
+      <a href="/celebrities/create">Add a new celebrity</a>
+  
+    
+    {{else}}
+
+
+   
+      <a href="/login">Login</a>
+      <a href="/signup">Signup</a>
+ 
+
+
+    {{/if}}
+    </nav>
+
+
     {{{body}}}
 
     <script src='/javascripts/script.js'></script>
