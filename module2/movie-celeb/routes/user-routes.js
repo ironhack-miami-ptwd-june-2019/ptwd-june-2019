@@ -93,6 +93,7 @@ router.post('/logout', (req, res, next)=>{
 
 router.get('/secret' ,(req, res, next)=>{
   if(!req.user){
+    req.flash('error', 'please log in to view the secret page')
     res.redirect('/login')
   }
 
