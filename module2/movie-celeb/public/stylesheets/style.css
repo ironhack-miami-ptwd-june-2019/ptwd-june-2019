@@ -20,7 +20,8 @@ a {
 nav {
   border-bottom: 1px solid black;
   width: 100%;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  text-align: center; }
 
 nav form {
   display: inline;
