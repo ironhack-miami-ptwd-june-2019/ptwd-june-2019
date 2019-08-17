@@ -22,7 +22,7 @@ router.get('/', (req, res, next) => {
   router.get('/details/:idVariable', (req, res, next)=>{
   const theID = req.params.idVariable;
   
-  Movie.findById(theID)
+  Movie.findById(theID).populate('cast')
   .then((result)=>{
     res.render('movie-views/details', {theSingleMovie: result})
   })
@@ -33,19 +33,34 @@ router.get('/', (req, res, next) => {
   
   
   router.get('/create', (req, res, next)=>{
-    res.render('movie-views/new')
+
+    Celebrity.find()
+    .then((result)=>{
+
+      res.render('movie-views/new', {allCelebs: result})
+    })
+    .catch((err)=>{
+      next(err);
+    })
+
+
+
     //res render take a relative path as the argument
   })
   
   
   router.post('/creation', (req, res, next)=>{
+    console.log('=-=-=-=-=-=-=-=-=-')
+    console.log(req.body)
+
     let title = req.body.title;
     let director = req.body.director;
     let image = req.body.image;
+    let cast = req.body.cast
   
   
       Movie.create({
-      title, director, image
+      title, director, image, cast
       })
       .then((result)=>{
   
@@ -78,10 +93,29 @@ router.get('/', (req, res, next) => {
     
     
     Movie.findById(req.params.id)
-    .then((result)=>{
-        res.redirect('/movies');
-    
-  
+    .then((movie)=>{
+
+      Celebrity.find()
+      .then((celebs)=>{
+
+
+        celebs.forEach((eachCeleb)=>{
+
+          movie.cast.forEach(eachCelebID => {
+            if(eachCelebID.equals(eachCeleb._id)){
+              eachCeleb.included = true;
+            }
+          });
+
+        })
+
+
+        res.render('movie-views/edit', {theMovie: movie, celebs: celebs});
+
+      })
+      .catch((err)=>{
+        next(err)
+      })
     })
     .catch((err)=>{
       next(err)

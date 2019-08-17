@@ -20,5 +20,23 @@
 
 
 
+        {{#each celebs}}
+        {{#if this.included}}
+         <div>
+        <input style="margin: 10px" type="checkbox" value="{{this._id}}" name="cast" checked="checked">
+        {{this.name}}
+        </div>
+
+        {{else}}
+
+        <div>
+        <input style="margin: 10px" type="checkbox" value="{{this._id}}" name="cast">
+        {{this.name}}
+        </div>
+        {{/if}}
+        {{/each}}
+
+
+
         <button>Save</button>
 </form>

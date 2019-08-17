@@ -6,6 +6,7 @@ const movieSchema = new Schema({
     title: String,
     director: String,
     image: String,
+    cast: [{type: Schema.Types.ObjectId, ref: 'Celebrity'}]
 })
 
 

@@ -18,6 +18,18 @@
         <input type="text" name="image">
         </div>
 
+        {{#each allCelebs}}
+        <div>
+        <input style="margin: 10px" type="checkbox" value="{{this._id}}" name="cast">
+        {{this.name}}
+        </div>
+
+    
+       
+        {{/each}}
+
+
+
 
 
         <button>Save</button>

@@ -13,3 +13,12 @@ Directoed By: {{theSingleMovie.director}}
 
 <img src="{{theSingleMovie.image}}" alt="" style="width: 300px">
 
+
+<h2>Cast & Crew</h2>
+{{#each theSingleMovie.cast}}
+
+<div>
+    {{this.name}}
+</div>
+
+{{/each}}
