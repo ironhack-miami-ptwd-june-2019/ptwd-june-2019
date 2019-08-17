@@ -1,1 +1,25 @@
-this is index
+<h2>Movies Index Page</h2>
+
+<div>
+
+{{#each listOfMovies}}
+
+<a href="/movies/details/{{this._id}}">
+<h3>
+{{this.title}}
+</h3>
+</a>
+
+
+<a href="/movies/edit/{{this._id}}">Edit This Movie</a>
+<form action="/movies/{{this._id}}/destroy" method="POST">
+    <button>Delete Movie</button>
+</form>
+
+
+
+
+{{/each}}
+
+
+</div>

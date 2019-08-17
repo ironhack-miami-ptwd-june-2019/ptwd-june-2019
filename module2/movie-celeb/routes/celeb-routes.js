@@ -5,6 +5,10 @@ const Celebrity = require('../models/Celebrity');
 
 /* GET home page */
 router.get('/', (req, res, next) => {
+  if(!req.user){
+    req.flash('error', 'please login to view actors profiles')
+    res.redirect('/login')
+  }
   console.log('------------------------')
   console.log(req.user)
 
