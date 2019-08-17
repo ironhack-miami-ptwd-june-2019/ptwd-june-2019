@@ -20,7 +20,7 @@ a {
 nav {
   border-bottom: 1px solid black;
   width: 100%;
-  padding-bottom: 20px;
+  padding: 20px;
   text-align: center; }
 
 nav form {
@@ -37,7 +37,7 @@ nav form button {
   font-size: 14px; }
 
 nav a {
-  margin: 5px;
+  margin: 1%;
   text-decoration: none;
   border: 1px solid black;
   border-radius: 5px;
