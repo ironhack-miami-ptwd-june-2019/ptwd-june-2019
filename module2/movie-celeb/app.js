@@ -136,6 +136,9 @@ app.use('/celebrities',celebRoutes);
 const userRoutes = require('./routes/user-routes');
 app.use(userRoutes)
 
+const movieRoutes = require('./routes/movie-routes');
+app.use('/movies', movieRoutes);
+
 //every route in this file will have /celebrities in thebeginning of the route
 
 

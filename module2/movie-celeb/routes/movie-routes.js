@@ -7,6 +7,8 @@ const Movie     = require('../models/Movie')
 
 
 
+router.get('/')
+
 
 
 
