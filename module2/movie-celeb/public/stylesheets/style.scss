@@ -6,3 +6,17 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+.card{
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+}
+

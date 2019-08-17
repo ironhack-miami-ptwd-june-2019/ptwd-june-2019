@@ -3,23 +3,37 @@
 <div>
 
 {{#each listOfCelebs}}
+<div class="card">
+
 
 <a href="/celebrities/details/{{this._id}}">
+
 <h3>
 {{this.name}}
 </h3>
+
 </a>
+
 
 {{#if this.owned}}
 
-<a href="/celebrities/edit/{{this._id}}">Edit This Celebrity</a>
-<form action="/celebrities/{{this._id}}/destroy" method="POST">
+<a style="width: 33%" href="/celebrities/edit/{{this._id}}">Edit This Celebrity</a>
+<form style="width: 33%" action="/celebrities/{{this._id}}/destroy" method="POST">
     <button>Delete Celeb</button>
 </form>
+
+{{else}}
+
+<span style="width: 33%"></span>
+<span style="width: 33%"></span>
+
+
 
 {{/if}}
 
 
+
+</div>
 {{/each}}
 
 
