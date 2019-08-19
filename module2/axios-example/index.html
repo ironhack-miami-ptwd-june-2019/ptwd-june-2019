@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   
+    <script src="./script.js"></script>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <h1>Look At The Counties</h1>
+
+    <form id="searchForm">
+        <h3>Get Country Details</h3>
+
+        <p>Country Name</p>
+        <input type="text" id="country-name">
+
+        <button>Submit</button>
+    </form>
+
+
+    <div id="countries">
+
+    </div>
+
+
+    <h3>New Char Form</h3>
+
+    <form id="new-char-form" action="http://ih-crud-api.herokuapp.com" method="POST">
+
+        <p>name</p>
+        <input type="text" id="name-name" name="name">
+
+        <p>occupation</p>
+        <input type="text" id="occupation" name="occupation">
+
+        <p>weapon</p>
+        <input type="text" id="weapon" name="weapon" >
+
+        <button>Submit</button>
+
+
+    </form>
+
+
+    <div id="blah"></div>
+    
+
+</body>
+</html>
