@@ -1,15 +1,53 @@
 
+<div style="float: left">
 
-<h1>
+
+<h1 id="actual-name">
 {{theSingleCelebrity.name}}
 </h1>
 
 
-<h4>
+<h4 id="actual-occupation">
 {{theSingleCelebrity.occupation}}
 </h4>
 
 
-<p>
+<p id="actual-catchphrase">
 {{theSingleCelebrity.catchphrase}}
 </p>
+
+
+</div>
+
+<div style="float:right">
+
+
+<h2>Edit {{theCelebrity.name}}</h2>
+
+<form id="edit-form">
+
+    <input type="hidden" value="{{theSingleCelebrity._id}}" id="secret">
+
+    <div>
+        <label>Name</label>
+        <input type="text" id="name-thing" value="{{theSingleCelebrity.name}}">
+    </div>
+
+        <div>
+        <label>Occupation</label>
+        <input type="text" id="occupation-thing"  value="{{theSingleCelebrity.occupation}}">
+        </div>
+
+        <div>
+        <label>Catchphrase</label>
+        <input type="text" id="catchphrase-thing"  value="{{theSingleCelebrity.catchphrase}}">
+        </div>
+
+
+</form>
+
+
+
+</div>
+
+<script src="/javascripts/celeb-edit.js"></script>

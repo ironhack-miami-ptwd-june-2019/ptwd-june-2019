@@ -95,24 +95,25 @@ router.post('/:id/destroy', (req, res, next)=>{
 })
 
 
-router.get('/edit/:id', (req, res, next)=>{
+// router.get('/edit/:id', (req, res, next)=>{
   
   
-  Celebrity.findById(req.params.id)
-  .then((result)=>{
-    if(req.user._id.equals(result.creator)){
-      res.render('celeb-views/edit', {theCelebrity: result})
-    } else{
-      req.flash('error', 'sorry you can only edit your own celebrities');
-      res.redirect('/celebrities');
-    }
+//   Celebrity.findById(req.params.id)
+//   .then((result)=>{
+//     if(req.user._id.equals(result.creator)){
+//       res.render('celeb-views/edit', {theCelebrity: result})
+//     } else{
+//       req.flash('error', 'sorry you can only edit your own celebrities');
+//       res.redirect('/celebrities');
+//     }
 
-  })
-  .catch((err)=>{
-    next(err)
-  })
+//   })
+//   .catch((err)=>{
+//     next(err)
+//   })
 
-})
+// })
+// we don't need this route because were editing inside the details page through axios
 
 
 
