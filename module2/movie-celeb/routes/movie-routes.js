@@ -4,6 +4,8 @@ const router  = express.Router();
 const Celebrity = require('../models/Celebrity');
 const Movie     = require('../models/Movie')
 
+const magicUploadMiddleWare = require('../config/cloudinary-thing');
+
 
 
 
@@ -49,14 +51,21 @@ router.get('/', (req, res, next) => {
   })
   
   
-  router.post('/creation', (req, res, next)=>{
+  router.post('/creation',  magicUploadMiddleWare.single('image-name-thingy'), (req, res, next)=>{
+
+    
+
     console.log('=-=-=-=-=-=-=-=-=-')
     console.log(req.body)
 
     let title = req.body.title;
     let director = req.body.director;
-    let image = req.body.image;
     let cast = req.body.cast
+
+    let image = '/images/blah.png';
+    if(req.file){
+      image =  req.file.url;
+    }
   
   
       Movie.create({

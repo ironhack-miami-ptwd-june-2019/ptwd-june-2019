@@ -1,7 +1,7 @@
 
 <h2>Add a New Movie To the Database</h2>
 
-<form action="/movies/creation" method="POST">
+<form action="/movies/creation" method="POST" enctype="multipart/form-data">
 
     <div>
         <label>Title</label>
@@ -15,7 +15,7 @@
 
         <div>
         <label>Image</label>
-        <input type="text" name="image">
+        <input type="file" name="image-name-thingy">
         </div>
 
         {{#each allCelebs}}
