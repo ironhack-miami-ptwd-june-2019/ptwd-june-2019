@@ -24,32 +24,21 @@ class App extends React.Component {
 
   showAnimals = () =>{
     return this.state.listOfAnimals.map((eachAnimal)=>{
-
       return(
-
         <SingleAnimal  
         name={eachAnimal.name} 
         weight={eachAnimal.weight}/>
-        
         )
     })
 
   }
 
   render(){
-
       return (
         <div>
-
         Hello
-
       <User theUsername="coolgirl77" />
-
-
-        {this.showAnimals()}
-   
-
-        
+        {this.showAnimals()}  
       </div>
     );
   }
