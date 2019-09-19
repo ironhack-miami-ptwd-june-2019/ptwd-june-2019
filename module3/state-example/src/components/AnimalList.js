@@ -57,8 +57,6 @@ class AnimalList extends React.Component {
                         newName: "",
                         newWeight: "",
                     }) 
-
-
                 }
 
 
