@@ -9,7 +9,7 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 const session      = require("express-session");
-
+const cors         = require("cors"); 
 
 // enables database connection
 require("./configs/database/db.setup");
@@ -38,6 +38,17 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
+
+// use CORS to allow access to this API from the frontend application
+// CORS -> Cross-Origin Resource Sharing
+
+app.use(cors({
+  credentials: true,
+  // this is the port where our react app is running
+  // array of domains we accept the cookies from
+  origin: ["http://localhost:3000"]
+}))
+
 
 // SESSION:
 app.use(session({

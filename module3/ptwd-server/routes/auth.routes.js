@@ -37,19 +37,61 @@ authRouter.post("/api/signup", (req, res, next) => {
           // "req.login()" is a Passport method that calls "serializeUser()"
           // (that saves the USER ID in the session)
           
-          // req.login(userDoc, (err) => {
-          //   if(err){
-          //     res.status(401).json({ message: "Something happened when logging in after the signup" });
-          //     return;
-          //   }
+          req.login(userDoc, (err) => {
+            if(err){
+              res.status(401).json({ message: "Something happened when logging in after the signup" });
+              return;
+            }
             userDoc.encryptedPassword = undefined;
             res.status(200).json({ userDoc });  
-          // })
+          })
          } )
         .catch( err => next(err) ); // close User.create()
     })
     .catch(err => next(err)); // close User.findOne()
 });
+
+authRouter.post("/api/login", (req, res, next)  => {
+  passport.authenticate("local", (err, userDoc, failureDetails) => {
+    if(err){
+      res.status(500).json({ message: "Something went wrong with login." })
+    }
+    if(!userDoc){
+      res.status(401).json(failureDetails);
+    }
+
+    req.login(userDoc, (err) => {
+      if(err){
+        res.status(500).json({message: "Something went wrong with getting user object from DB"})
+        return;
+      }
+      // set password to undefined so it doesn't get revealed in the client side (browser ==> react app)
+      userDoc.encryptedPassword = undefined;
+      // send json object with user information to the client
+      res.json({ userDoc });
+    } )
+  })(req, res, next);
+})
+
+authRouter.delete("/api/logout", (req, res, next) => {
+  req.logout();
+  res.json({ userDoc: null })
+})
+
+// check if user is logged in
+
+authRouter.get("/api/checkuser", (req, res, next) => {
+  // console.log("do i have user: ", req.user);
+  if(req.user){
+    req.user.encryptedPassword = undefined;
+    // res.json(req.user)
+    res.json({ userDoc: req.user })
+  } else {
+    res.json({ userDoc: null })
+  }
+})
+
+
 
 
 
