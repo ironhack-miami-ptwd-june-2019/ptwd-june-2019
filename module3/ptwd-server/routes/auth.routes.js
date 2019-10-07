@@ -68,26 +68,28 @@ authRouter.post("/api/login", (req, res, next)  => {
       // set password to undefined so it doesn't get revealed in the client side (browser ==> react app)
       userDoc.encryptedPassword = undefined;
       // send json object with user information to the client
-      res.json({ userDoc });
+      res.status(200).json({ userDoc });
     } )
   })(req, res, next);
 })
 
 authRouter.delete("/api/logout", (req, res, next) => {
+  // "req.logout()" is a Passport method that removes the user ID from session
   req.logout();
+  // send empty "userDoc" when you log out
   res.json({ userDoc: null })
 })
 
-// check if user is logged in
-
+// check if user is logged in and if we are logged in what are user's details
+// this is the information that is useful for the frontend application
 authRouter.get("/api/checkuser", (req, res, next) => {
   // console.log("do i have user: ", req.user);
   if(req.user){
     req.user.encryptedPassword = undefined;
     // res.json(req.user)
-    res.json({ userDoc: req.user })
+    res.status(200).json({ userDoc: req.user })
   } else {
-    res.json({ userDoc: null })
+    res.status(401).json({ userDoc: null })
   }
 })
 
