@@ -24,16 +24,16 @@ export default class Signup extends React.Component {
         event.preventDefault();
 
         axios.post(
-            // q. route we are hitting in the backend
+            // route we are hitting in the backend
             "http://localhost:3001/api/signup",
-            // the data from the form
+            // the data from the form (AKA req.body 🚀) that we are sending to this route to do the job
             this.state,
             // secure sending
             { withCredentials: true }
         )
         .then( responseFromServer => {
             console.log("response is:", responseFromServer)
-        } )
+        })
         .catch( err => console.log("Err in signup: ", err));
     }
 
@@ -46,7 +46,7 @@ export default class Signup extends React.Component {
                 <form onSubmit ={ event => this.handleSubmit(event) } >
                     <label> Full name: </label>
                     <input
-                        value={fullName}
+                        value={fullName} // this.state.fullName
                         onChange = { event => this.genericSync(event) } 
                         type="text"
                         name="fullName"
@@ -55,7 +55,7 @@ export default class Signup extends React.Component {
 
                      <label> Email: </label>
                     <input
-                        value={email}
+                        value={email} // this.state.email
                         onChange = { event => this.genericSync(event) } 
                         type="email"
                         name="email"
@@ -64,7 +64,7 @@ export default class Signup extends React.Component {
 
                     <label> Password</label>
                     <input
-                        value={password}
+                        value={password} // this.state.password
                         onChange = { event => this.genericSync(event) } 
                         type="password"
                         name="password"
@@ -72,7 +72,7 @@ export default class Signup extends React.Component {
                     />
                     <button> Sign Up </button>
                 </form>
-                {/* if the message is not null (basically if there's a message) then show it */}
+                {/* if the message is not null (basically if there's a message) then show it in this <div> tag */}
                 { this.state.message && <div> { this.state.message } </div> }
             </section>
 
