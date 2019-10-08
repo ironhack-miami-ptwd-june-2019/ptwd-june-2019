@@ -3,8 +3,8 @@ import axios from "axios";
 
 
 export default class Signup extends React.Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             fullName: "",
             email: "",
@@ -32,14 +32,25 @@ export default class Signup extends React.Component {
             { withCredentials: true }
         )
         .then( responseFromServer => {
-            console.log("response is:", responseFromServer)
+            // console.log("response is:", responseFromServer);
+            const { userDoc } = responseFromServer.data;
+            this.props.onUserChange(userDoc);
         })
         .catch( err => console.log("Err in signup: ", err));
     }
 
     render(){
+        console.log("Do I have user in Signup: ", this.props.currentUser)
         const { fullName, email, password } = this.state;
         // console.log("STATE: ", this.state);
+        if(this.props.currentUser){
+            return(
+                <div>
+                    <h2> Welcome to your app, { this.props.currentUser.fullName } ! You're signed in! </h2>
+                </div>
+            )
+        }
+
         return (
             <section>
                 <h2> Sign up </h2>
