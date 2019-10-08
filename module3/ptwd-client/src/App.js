@@ -39,7 +39,7 @@ class App extends React.Component {
 
 
   render (){   
-    console.log("the state in APPJS: ", this.state);
+    // console.log("the state in APPJS: ", this.state);
     return (
       <div >
         <header>
@@ -52,10 +52,20 @@ class App extends React.Component {
         <Switch>
         {/* this is example how we would render component normally */}
         {/* <Route exact path="/somePage" component={ someComponentThatWillRenderWhenThisRouteIsHit }   /> */}
-          <Route exact path="/" component={ Home }   />  
+          <Route exact path="/" component={ Home }   /> 
+          <Route exact path="/countries" component={ CountriesList }   /> 
+
+          {/* if we have to pass some props down to a component,
+          we can't use a standard way of rendering using component={},
+          but instead we have to use render = {}  like in the example below */}
           <Route exact path="/signup-page" render = { () => 
-            <Signup currentUser = { this.state.currentUser }   
-            onUserChange = { userDoc => this.syncCurrentUSer(userDoc) }   /> }   />>
+            <Signup 
+              currentUser = { this.state.currentUser }   
+              onUserChange = { userDoc => this.syncCurrentUSer(userDoc) }   
+            /> 
+          }/>
+
+          {/* Login component goes here */}
 
         </Switch>
           {/* <CountriesList /> */}
