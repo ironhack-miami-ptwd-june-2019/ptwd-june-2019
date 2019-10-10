@@ -12,6 +12,16 @@ export default class CountriesList extends React.Component {
 
 
     // componentDidMount(){
+    //     axios.get("https://restcountries.eu/rest/v2/all")
+    //     .then(responseFromRESTCOUNTRIESApi => {
+    //         // console.log("Response is: ", responseFromRESTCOUNTRIESApi.data)
+    //         this.setState({ theCountriesFromAPI: responseFromRESTCOUNTRIESApi.data })        
+    //     })
+    //     .catch(err =>console.log("Err while getting countries: ", err))
+    // }
+
+    // THE SAME AS ABOVE JUST USING FETCH
+    // componentDidMount(){
     //     fetch("https://restcountries.eu/rest/v2/all")
     //     .then(responseFromRESTCOUNTRIESApi => {
     //         // console.log("Response is: ", responseFromRESTCOUNTRIESApi.json())
@@ -22,7 +32,7 @@ export default class CountriesList extends React.Component {
     // }
 
 
-
+    // the same as above just creating the regular method
     fetchCountries(){
         fetch("https://restcountries.eu/rest/v2/all")
         .then(responseFromRESTCOUNTRIESApi => {
@@ -38,16 +48,17 @@ export default class CountriesList extends React.Component {
         const { theCountriesFromAPI } = this.state;
         return (
             <div>
-        { this.fetchCountries() }
-            <ul>
-                { theCountriesFromAPI.map((oneCountry, i) => {
-                    return (
-                        <li key={i}> {oneCountry.name} </li>
-                    )
-                }) }
-            </ul>
-             </div>
+                {/* INVOKE METHOD HERE */}
+                { this.fetchCountries() } 
+
+                <ul>
+                    { theCountriesFromAPI.map((oneCountry, i) => {
+                            return (
+                                <li key={i}> {oneCountry.name} </li>
+                            )
+                    })}
+                </ul>
+            </div>
         )
     }
-
 }
