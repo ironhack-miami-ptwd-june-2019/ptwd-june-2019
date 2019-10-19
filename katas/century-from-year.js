@@ -1,4 +1,3 @@
-
 // ************************************************************************************
 // https://www.codewars.com/kata/century-from-year/javascript
 // The first century spans from the year 1 up to and including the year 100,
