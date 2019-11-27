@@ -1,4 +1,5 @@
 ## JS/ES6
+- [**ES6 Overview in 350 Bullet Points**](https://ponyfoo.com/articles/es6)
 - [All you have to know about ES6](http://exploringjs.com/es6/) 
 - [JavaScript ES6 — write less, do more](https://medium.com/free-code-camp/write-less-do-more-with-javascript-es6-5fd4a8e50ee2)
 - [How three dots changed JavaScript](https://dmitripavlutin.com/how-three-dots-changed-javascript/)

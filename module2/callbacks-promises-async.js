@@ -134,3 +134,5 @@ function printString(str){
     console.log(toPrint); // Prints out " A B C"
   }
   addAllWithPromise();
+
+// Additional read: https://medium.com/javascript-in-plain-english/a-guide-to-javascript-promises-da50eff327d7
