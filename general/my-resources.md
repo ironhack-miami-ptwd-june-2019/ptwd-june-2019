@@ -120,7 +120,7 @@
 - [Find the right developer tools](https://stackshare.io/)
 - [What's needed on the market](https://2018.stateofjs.com/)
 - [Public APIs](https://public-apis.xyz/)
-- [Google IO](https://codelabs.developers.google.com/io2018/)
+- [Google IO](https://codelabs.developers.google.com/io2019/)
 
 ## Interview Prep
 - [10 Interview Questions Every JavaScript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)
