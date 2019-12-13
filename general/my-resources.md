@@ -48,7 +48,7 @@
 
 
 ## RegEx
-- [Regular Expression](https://www.rexegg.com/regex-quickstart.html)
+- [Regular Expressions](https://www.rexegg.com/regex-quickstart.html)
 - [Regular Expressions - quickstart](https://www.regular-expressions.info/quickstart.html)
 - [REGEX generator](https://regexr.com/)
 - [https://regex101.com/](https://regex101.com/)
