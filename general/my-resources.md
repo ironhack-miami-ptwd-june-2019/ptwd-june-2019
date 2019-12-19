@@ -124,6 +124,7 @@
 - [Google IO](https://codelabs.developers.google.com/io2019/)
 
 ## Interview Prep
+- [30secondsofinterviews](https://30secondsofinterviews.org/)
 - [10 Interview Questions Every JavaScript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)
 - [awesome-interview-questions](https://github.com/MaximAbramchuck/awesome-interview-questions#javascript)
 - [JS - test: beginner](https://thatjsdude.com/interview/js1.html)
