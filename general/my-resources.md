@@ -46,6 +46,7 @@
 - [video - Unit testing in JavaScript Part 2 - Your first tests](https://www.youtube.com/watch?v=XsFQEUP1MxI)
 - [video - Unit testing in JavaScript Part 3 - Test runners - JEST](https://www.youtube.com/watch?v=pdx2HjFRaJY)
 - [short video - Javascript Unit Testing with Jasmine](https://www.youtube.com/watch?v=rw4KlxKEENQ)
+- [Intro To JavaScript Unit Testing With Mocha JS & Chai](https://www.youtube.com/watch?v=MLTRHc5dk6s)
 
 
 
@@ -60,6 +61,7 @@
 - [ReactJS Examples](https://reactjsexample.com/)
 - [React Router v4: [match, location, history] — your best friends!](https://medium.freecodecamp.org/hitchhikers-guide-to-react-router-v4-4b12e369d10)
 - [React Router in 20 minutes](https://medium.freecodecamp.org/hitchhikers-guide-to-react-router-v4-a957c6a5aa18)
+- [Redux Crash Course With React](https://www.youtube.com/watch?v=93p3LxR9xfM)
 
 
 ## RegEx
