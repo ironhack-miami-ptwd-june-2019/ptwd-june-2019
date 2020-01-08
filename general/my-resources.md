@@ -1,4 +1,5 @@
 ## JS/ES6
+- [The Ultimate Guide to JavaScript Algorithms Courses](https://scotch.io/courses/the-ultimate-guide-to-javascript-algorithms)
 - [**ES6 Overview in 350 Bullet Points**](https://ponyfoo.com/articles/es6)
 - [All you have to know about ES6](http://exploringjs.com/es6/) 
 - [JavaScript ES6 — write less, do more](https://medium.com/free-code-camp/write-less-do-more-with-javascript-es6-5fd4a8e50ee2)
@@ -10,7 +11,6 @@
 - [Hoisting in Modern JavaScript — let, const, and var](https://blog.bitsrc.io/hoisting-in-modern-javascript-let-const-and-var-b290405adfda)
 - [What is `this`? The Inner Workings of JavaScript Objects](https://medium.com/javascript-scene/what-is-this-the-inner-workings-of-javascript-objects-d397bfa0708a)
 - [What is “this” in JavaScript?](https://blog.bitsrc.io/what-is-this-in-javascript-3b03480514a7)
-- [ ✅ Hacks for Creating JavaScript Arrays](https://www.freecodecamp.org/news/https-medium-com-gladchinda-hacks-for-creating-javascript-arrays-a1b80cb372b/)
 
 
 ## Data Structures
@@ -29,6 +29,7 @@
 - [map vs. forEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
 - [.slice(), .splice() 1](https://medium.com/@jeanpan/javascript-splice-slice-split-745b1c1c05d2)
 - [.slice() vs .splice 2](http://www.tothenew.com/blog/javascript-splice-vs-slice/)
+- [ ✅ Hacks for Creating JavaScript Arrays](https://www.freecodecamp.org/news/https-medium-com-gladchinda-hacks-for-creating-javascript-arrays-a1b80cb372b/)
 
 ## OOP
 - [An introduction to Object-Oriented Programming in JavaScript](https://medium.com/free-code-camp/an-introduction-to-object-oriented-programming-in-javascript-8900124e316a)
