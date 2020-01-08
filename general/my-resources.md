@@ -37,6 +37,7 @@
 - [What’s the Difference Between Class & Prototypal Inheritance?](https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9)
 
 ## Testing
+- [video - Unit Testing in JavaScript and Jasmine | TLDR Jasmine Unit Test Tutorial By: Dylan Israel](https://www.youtube.com/watch?v=h2eWfvcAOTI)
 - [Introduction to Test Driven Development in JavaScript using Jasmine](https://www.pluralsight.com/guides/introduction-to-test-driven-development-in-javascript)
 - [Learn Test Driven Development (TDD)](https://github.com/dwyl/learn-tdd)
 - [A GENTLE INTRODUCTION TO JAVASCRIPT TEST DRIVEN DEVELOPMENT: PART 1](https://jrsinclair.com/articles/2016/gentle-introduction-to-javascript-tdd-intro/)
@@ -44,6 +45,7 @@
 - [video - Unit testing in JavaScript Part 1 - Why unit testing?](https://www.youtube.com/watch?v=Eu35xM76kKY)
 - [video - Unit testing in JavaScript Part 2 - Your first tests](https://www.youtube.com/watch?v=XsFQEUP1MxI)
 - [video - Unit testing in JavaScript Part 3 - Test runners - JEST](https://www.youtube.com/watch?v=pdx2HjFRaJY)
+- [short video - Javascript Unit Testing with Jasmine](https://www.youtube.com/watch?v=rw4KlxKEENQ)
 
 
 
