@@ -40,6 +40,8 @@
 - [Introduction to Test Driven Development in JavaScript using Jasmine](https://www.pluralsight.com/guides/introduction-to-test-driven-development-in-javascript)
 - [Learn Test Driven Development (TDD)](https://github.com/dwyl/learn-tdd)
 - [A GENTLE INTRODUCTION TO JAVASCRIPT TEST DRIVEN DEVELOPMENT: PART 1](https://jrsinclair.com/articles/2016/gentle-introduction-to-javascript-tdd-intro/)
+- [video - JS Testing Introduction Tutorial - Unit Tests, Integration Tests & e2e Tests - Jest with Maximillian](https://www.youtube.com/watch?v=r9HdJ8P6GQI)
+
 
 
 ## PassportJS
