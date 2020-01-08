@@ -47,6 +47,9 @@
 - [video - Unit testing in JavaScript Part 3 - Test runners - JEST](https://www.youtube.com/watch?v=pdx2HjFRaJY)
 - [short video - Javascript Unit Testing with Jasmine](https://www.youtube.com/watch?v=rw4KlxKEENQ)
 - [Intro To JavaScript Unit Testing With Mocha JS & Chai](https://www.youtube.com/watch?v=MLTRHc5dk6s)
+- [Hackernoon: Testing Your Frontend Code: Part II (Unit Testing)](https://hackernoon.com/testing-your-frontend-code-part-ii-unit-testing-1d05f8d50859)
+- [Examples on GitHub - JS — Unit Testing using Mocha and Chai](https://github.com/npatro/javascript-unit-testing-with-mocha)
+- [A guide to unit testing in JavaScript](https://github.com/mawrkus/js-unit-testing-guide)
 
 
 
