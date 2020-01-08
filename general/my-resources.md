@@ -36,6 +36,12 @@
 - [Classical vs. Prototypal Inheritance](https://dev.to/crishanks/classical-vs-prototypal-inheritance-2o5a)
 - [What’s the Difference Between Class & Prototypal Inheritance?](https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9)
 
+## Testing
+- [Introduction to Test Driven Development in JavaScript using Jasmine](https://www.pluralsight.com/guides/introduction-to-test-driven-development-in-javascript)
+- [Learn Test Driven Development (TDD)](https://github.com/dwyl/learn-tdd)
+- [A GENTLE INTRODUCTION TO JAVASCRIPT TEST DRIVEN DEVELOPMENT: PART 1](https://jrsinclair.com/articles/2016/gentle-introduction-to-javascript-tdd-intro/)
+
+
 ## PassportJS
 - [PassportJS — The Confusing Parts Explained](https://hackernoon.com/passportjs-the-confusing-parts-explained-edca874ebead)
 - [Learn how to handle authentication with Node using Passport.js](https://medium.com/signature-networks/learn-how-to-handle-authentication-with-node-using-passport-js-4a56ed18e81e)
