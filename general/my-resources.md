@@ -33,6 +33,8 @@
 - [OOP In JavaScript: What You NEED to Know](https://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
 - [JS Classes - under the hood](https://medium.com/tech-tajawal/javascript-classes-under-the-hood-6b26d2667677)
 - [“Super” and “Extends” In JavaScript ES6 - Understanding The Tough Parts](https://medium.com/beginners-guide-to-mobile-web-development/super-and-extends-in-javascript-es6-understanding-the-tough-parts-6120372d3420)
+- [Classical vs. Prototypal Inheritance](https://dev.to/crishanks/classical-vs-prototypal-inheritance-2o5a)
+- [What’s the Difference Between Class & Prototypal Inheritance?](https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9)
 
 ## PassportJS
 - [PassportJS — The Confusing Parts Explained](https://hackernoon.com/passportjs-the-confusing-parts-explained-edca874ebead)
