@@ -41,6 +41,9 @@
 - [Learn Test Driven Development (TDD)](https://github.com/dwyl/learn-tdd)
 - [A GENTLE INTRODUCTION TO JAVASCRIPT TEST DRIVEN DEVELOPMENT: PART 1](https://jrsinclair.com/articles/2016/gentle-introduction-to-javascript-tdd-intro/)
 - [video - JS Testing Introduction Tutorial - Unit Tests, Integration Tests & e2e Tests - Jest with Maximillian](https://www.youtube.com/watch?v=r9HdJ8P6GQI)
+- [video - Unit testing in JavaScript Part 1 - Why unit testing?](https://www.youtube.com/watch?v=Eu35xM76kKY)
+- [video - Unit testing in JavaScript Part 2 - Your first tests](https://www.youtube.com/watch?v=XsFQEUP1MxI)
+- [video - Unit testing in JavaScript Part 3 - Test runners - JEST](https://www.youtube.com/watch?v=pdx2HjFRaJY)
 
 
 
