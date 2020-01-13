@@ -1,4 +1,5 @@
 ## JS/ES6
+- [MUST: JS Interview Questions](https://github.com/sudheerj/javascript-interview-questions)
 - [The Ultimate Guide to JavaScript Algorithms Courses](https://scotch.io/courses/the-ultimate-guide-to-javascript-algorithms)
 - [**ES6 Overview in 350 Bullet Points**](https://ponyfoo.com/articles/es6)
 - [All you have to know about ES6](http://exploringjs.com/es6/) 
