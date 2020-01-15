@@ -77,6 +77,7 @@
 - [React Router v4: [match, location, history] — your best friends!](https://medium.freecodecamp.org/hitchhikers-guide-to-react-router-v4-4b12e369d10)
 - [React Router in 20 minutes](https://medium.freecodecamp.org/hitchhikers-guide-to-react-router-v4-a957c6a5aa18)
 - [Redux Crash Course With React](https://www.youtube.com/watch?v=93p3LxR9xfM)
+- [WesBos - React’s New Context API Explained](https://wesbos.com/react-context/)
 
 
 ## RegEx
