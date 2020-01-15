@@ -63,6 +63,7 @@
 - [Creating a package.json file](https://docs.npmjs.com/creating-a-package-json-file)
 - [What is the `package-lock.json`](https://docs.npmjs.com/files/package-lock.json)
 - [Everything You Wanted To Know About package-lock.json But Were Too Afraid To Ask](https://medium.com/coinmonks/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8)
+- [Demystifying `devDependencies` and `dependencies`](https://dev.to/moimikey/demystifying-devdependencies-and-dependencies-5ege)
 
 
 ## PassportJS
