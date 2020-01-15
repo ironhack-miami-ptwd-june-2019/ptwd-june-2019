@@ -87,6 +87,7 @@
 - [REGEX generator](https://regexr.com/)
 - [https://regex101.com/](https://regex101.com/)
 
+
 ## Git-GitHub-Version Control
 - [Git-best practices](https://sethrobertson.github.io/GitBestPractices/)
 - [Basic Git Commands](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
@@ -94,11 +95,18 @@
 - [Git Merge vs. Rebase: What’s the Diff?](https://hackernoon.com/git-merge-vs-rebase-whats-the-diff-76413c117333)
 - [Semantic Commit Messages when pushing to GitHub](https://seesparkbox.com/foundry/semantic_commit_messages)
 
+
 ## Clean Code
 - [**JavaScript style guide** aka **The Clean Code**](https://google.github.io/styleguide/jsguide.html)
 - [Google's style guide for writing a clean code](https://google.github.io/styleguide/htmlCSSguide.html/)
 - [JavaScript linter](https://eslint.org/docs/user-guide/getting-started)
 - [Keep Code Consistent With Prettier & ESLint](https://itnext.io/keep-code-consistent-across-developers-the-easy-way-with-prettier-eslint-60bb7e91b76c)
+
+## Project management
+- [SCRUM Guides](https://www.scrumguides.org/scrum-guide.html)
+- [Agile Vs Scrum: Know the Difference](https://www.guru99.com/agile-vs-scrum.html)
+- [SOLID Principles made easy](https://hackernoon.com/solid-principles-made-easy-67b1246bcdf)
+
 
 ## Styling
 
