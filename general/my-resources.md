@@ -94,6 +94,7 @@
 - [Git and branching](https://nvie.com/posts/a-successful-git-branching-model/)
 - [Git Merge vs. Rebase: What’s the Diff?](https://hackernoon.com/git-merge-vs-rebase-whats-the-diff-76413c117333)
 - [Semantic Commit Messages when pushing to GitHub](https://seesparkbox.com/foundry/semantic_commit_messages)
+- [Commit message guidelines](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53)
 
 
 ## Clean Code
