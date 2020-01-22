@@ -46,12 +46,17 @@ function printString(str){
   // solution: Promises - here to fix this nesting problem.
 
   // PROMISES
-  function printStringWithPromises(str){
+function printStringWithPromises(str){
     return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        console.log(str);
-        resolve();
-      }, Math.floor(Math.random() * 100));
+      if(str){
+        setTimeout(() => {
+          console.log(str);
+          resolve();
+        }, Math.floor(Math.random() * 100));
+      } else {
+        const err = new Error('String is never passed in!');
+        reject(err);
+      }
     });
   }
   
@@ -59,12 +64,10 @@ function printString(str){
     printStringWithPromises("A")
     .then(() => printStringWithPromises("B"))
     .then(() => printStringWithPromises("C"))
-    .catch(() => console.log("Something bad happened!"));
+    .catch(err => console.log(`Error happened: ${err.message}`));
   }
   // printAllWithPromises()
   
-
-  // ASYNC/AWAIT
 
   // ASYNC/AWAIT
 
@@ -135,4 +138,6 @@ function printString(str){
   }
   addAllWithPromise();
 
-// Additional read: https://medium.com/javascript-in-plain-english/a-guide-to-javascript-promises-da50eff327d7
+// Additional read: 
+// 1. https://medium.com/javascript-in-plain-english/a-guide-to-javascript-promises-da50eff327d7
+// 2. https://scotch.io/tutorials/javascript-promises-for-dummies
