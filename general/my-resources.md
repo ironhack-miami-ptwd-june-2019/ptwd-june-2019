@@ -107,6 +107,7 @@
 - [SCRUM Guides](https://www.scrumguides.org/scrum-guide.html)
 - [Agile Vs Scrum: Know the Difference](https://www.guru99.com/agile-vs-scrum.html)
 - [SOLID Principles made easy](https://hackernoon.com/solid-principles-made-easy-67b1246bcdf)
+- [Programming Habits You Should Adopt](https://levelup.gitconnected.com/programming-habits-you-should-adopt-8ab75419fb09)
 
 
 ## Styling
