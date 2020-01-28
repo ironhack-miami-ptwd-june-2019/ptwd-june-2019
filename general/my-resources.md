@@ -1,3 +1,6 @@
+## About and around
+- [https://devdocs.io/](https://devdocs.io/)
+
 ## JS/ES6
 - [MUST: JS Interview Questions](https://github.com/sudheerj/javascript-interview-questions)
 - [The Ultimate Guide to JavaScript Algorithms Courses](https://scotch.io/courses/the-ultimate-guide-to-javascript-algorithms)
