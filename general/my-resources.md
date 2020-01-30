@@ -11,6 +11,7 @@
 - [JavaScript functions](https://developer.mozilla.org/en-US/docs/Glossary/Function)
 - [JavaScript function arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
 - [What the heck is a callback?](https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced)
+- [Promises, async/await](https://javascript.info/async)
 - [9 Ways to remove items from array](https://love2dev.com/blog/javascript-remove-from-array/)
 - [Hoisting in Modern JavaScript — let, const, and var](https://blog.bitsrc.io/hoisting-in-modern-javascript-let-const-and-var-b290405adfda)
 - [What is `this`? The Inner Workings of JavaScript Objects](https://medium.com/javascript-scene/what-is-this-the-inner-workings-of-javascript-objects-d397bfa0708a)
