@@ -1,5 +1,6 @@
 ## About and around
 - [https://devdocs.io/](https://devdocs.io/)
+- [The Ten Commandments of Egoless Programming](https://blog.codinghorror.com/the-ten-commandments-of-egoless-programming/)
 
 ## JS/ES6
 - [MUST: JS Interview Questions](https://github.com/sudheerj/javascript-interview-questions)
