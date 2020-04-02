@@ -181,6 +181,7 @@
 
 
 ## Interview Prep
+- [10 Soft Skills Every Developer Needs](https://hackernoon.com/10-soft-skills-every-developer-needs-66f0cdcfd3f7)
 - [30secondsofinterviews](https://30secondsofinterviews.org/)
 - [10 Interview Questions Every JavaScript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)
 - [awesome-interview-questions](https://github.com/MaximAbramchuck/awesome-interview-questions#javascript)
