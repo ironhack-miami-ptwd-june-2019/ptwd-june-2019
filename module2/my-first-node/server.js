@@ -15,7 +15,7 @@ console.log(myChalk.green("This text should purple 💅"));
 const server = myHttp.createServer((request, response) => {
     console.log(`Requested URL is ${request.url} `);
     if(request.url === "/"){
-        response.write("This is the data from server.js and it's coll that it gets updated automatically!");
+        response.write("This is the data from server.js and it's cool that it gets updated automatically!");
         response.end();
     } else if (request.url === "/ptwd"){
         response.write(`Alina
