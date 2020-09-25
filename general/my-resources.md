@@ -13,10 +13,7 @@
 - [JavaScript function arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
 - [What the heck is a callback?](https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced)
 - [Promises, async/await](https://javascript.info/async)
-- [9 Ways to remove items from array](https://love2dev.com/blog/javascript-remove-from-array/)
 - [Hoisting in Modern JavaScript — let, const, and var](https://blog.bitsrc.io/hoisting-in-modern-javascript-let-const-and-var-b290405adfda)
-- [What is `this`? The Inner Workings of JavaScript Objects](https://medium.com/javascript-scene/what-is-this-the-inner-workings-of-javascript-objects-d397bfa0708a)
-- [What is “this” in JavaScript?](https://blog.bitsrc.io/what-is-this-in-javascript-3b03480514a7)
 - [Understanding Hoisting in JavaScript](https://scotch.io/tutorials/understanding-hoisting-in-javascript)
 - [JavaScript: Introduction to Scope (function scope, block scope)](https://dev.to/sandy8111112004/javascript-introduction-to-scope-function-scope-block-scope-d11)
 
@@ -38,6 +35,8 @@
 - [.slice(), .splice() 1](https://medium.com/@jeanpan/javascript-splice-slice-split-745b1c1c05d2)
 - [.slice() vs .splice 2](http://www.tothenew.com/blog/javascript-splice-vs-slice/)
 - [ ✅ Hacks for Creating JavaScript Arrays](https://www.freecodecamp.org/news/https-medium-com-gladchinda-hacks-for-creating-javascript-arrays-a1b80cb372b/)
+- [9 Ways to remove items from array](https://love2dev.com/blog/javascript-remove-from-array/)
+
 
 ## OOP
 - [An introduction to Object-Oriented Programming in JavaScript](https://medium.com/free-code-camp/an-introduction-to-object-oriented-programming-in-javascript-8900124e316a)
@@ -47,6 +46,8 @@
 - [Classical vs. Prototypal Inheritance](https://dev.to/crishanks/classical-vs-prototypal-inheritance-2o5a)
 - [What’s the Difference Between Class & Prototypal Inheritance?](https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9)
 - [A Beginner's Guide to JavaScript's Prototype](https://tylermcginnis.com/beginners-guide-to-javascript-prototype/)
+- [What is `this`? The Inner Workings of JavaScript Objects](https://medium.com/javascript-scene/what-is-this-the-inner-workings-of-javascript-objects-d397bfa0708a)
+- [What is “this” in JavaScript?](https://blog.bitsrc.io/what-is-this-in-javascript-3b03480514a7)
 
 ## Testing
 - [video - Unit Testing in JavaScript and Jasmine | TLDR Jasmine Unit Test Tutorial By: Dylan Israel](https://www.youtube.com/watch?v=h2eWfvcAOTI)
