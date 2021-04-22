@@ -97,6 +97,7 @@
 
 
 ## Git-GitHub-Version Control
+- [2020-Version controlbest practices](https://learn.gitlab.com/smb-vcc/version-control-best-practice?utm_medium=sponsorship&utm_source=stackoverflow&utm_campaign=vccusecase_global_pr_newsletter_x_x&utm_content=pf-vcc-smbfo_digital_x-pr_english)
 - [Git-best practices](https://sethrobertson.github.io/GitBestPractices/)
 - [Basic Git Commands](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
 - [Git and branching](https://nvie.com/posts/a-successful-git-branching-model/)
