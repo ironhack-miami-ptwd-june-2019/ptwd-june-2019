@@ -2,7 +2,7 @@
 - [https://devdocs.io/](https://devdocs.io/)
 - [The Ten Commandments of Egoless Programming](https://blog.codinghorror.com/the-ten-commandments-of-egoless-programming/)
 
-## HTML & CSS Cheatsheets
+## Cheatsheets
 - [HTML Cheat Sheet](https://websitesetup.org/html5-cheat-sheet/)
 - [Complete CSS Cheat Sheet](https://websitesetup.org/css3-cheat-sheet/)
 - [Bootstrap 5 Cheat Sheet](https://bootstrap-cheatsheet.themeselection.com/)
